@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  color: aliceblue;
+  background-color: #100c4a;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Crect fill='none' stroke-width='63' stroke-opacity='0.15' id='a' x='-400' y='-300' width='800' height='600'/%3E%3C/defs%3E%3Cg style='transform-origin:center'%3E%3Cg style='transform-origin:center'%3E%3Cg transform='rotate(-137.6 0 0)' style='transform-origin:center'%3E%3Cg transform='translate(1000 750)'%3E%3Cuse stroke='%2316086E' href='%23a' transform='rotate(8.6 0 0) scale(1.086)'/%3E%3Cuse stroke='%231c0869' href='%23a' transform='rotate(17.2 0 0) scale(1.172)'/%3E%3Cuse stroke='%23230764' href='%23a' transform='rotate(25.8 0 0) scale(1.258)'/%3E%3Cuse stroke='%2329075f' href='%23a' transform='rotate(34.4 0 0) scale(1.344)'/%3E%3Cuse stroke='%23300659' href='%23a' transform='rotate(43 0 0) scale(1.43)'/%3E%3Cuse stroke='%23360654' href='%23a' transform='rotate(51.6 0 0) scale(1.516)'/%3E%3Cuse stroke='%233d064f' href='%23a' transform='rotate(60.2 0 0) scale(1.602)'/%3E%3Cuse stroke='%2343054a' href='%23a' transform='rotate(68.8 0 0) scale(1.688)'/%3E%3Cuse stroke='%234a0545' href='%23a' transform='rotate(77.4 0 0) scale(1.774)'/%3E%3Cuse stroke='%23500440' href='%23a' transform='rotate(86 0 0) scale(1.86)'/%3E%3Cuse stroke='%2357043b' href='%23a' transform='rotate(94.6 0 0) scale(1.946)'/%3E%3Cuse stroke='%235d0436' href='%23a' transform='rotate(103.2 0 0) scale(2.032)'/%3E%3Cuse stroke='%23640330' href='%23a' transform='rotate(111.8 0 0) scale(2.118)'/%3E%3Cuse stroke='%236a032b' href='%23a' transform='rotate(120.4 0 0) scale(2.204)'/%3E%3Cuse stroke='%23710226' href='%23a' transform='rotate(129 0 0) scale(2.29)'/%3E%3Cuse stroke='%23770221' href='%23a' transform='rotate(137.6 0 0) scale(2.376)'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* color: #fff; */
+  /* background: url("/bg.jpg"); */
+  background-size: cover;
+}
+
+body::after {
+  /* content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1; */
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.input label {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.input select {
+  border: none;
+  border-radius: 8px;
+  min-width: 300px;
+  font-size: 16px;
+  padding: 8px 4px;
+  background-color: #6236ff;
+  color: #fff;
+}
+
+.input select:focus {
+  outline: none;
+}
+
+.circle-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.circle-outline {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 15px solid #f1f1f1;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.circle-progress {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: #6236ff;
+  border-radius: 50%;
+  transition: 4s ease all;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.circle-grow {
+  transform: scale(5.3);
+}
+
+.breaths {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+
+.instructions {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+button {
+  padding: 8px 20px;
+  border-radius: 8px;
+  background-color: #6236ff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+button:hover {
+  background-color: #f1f1f1;
+  color: #6236ff;
+}
+
+.button-inactive {
+  pointer-events: none;
+  background-color: #969696;
+}
+
+.footer{
+  text-align: center;
+  width: 100%;
+	flex-shrink: 0;
+	position: relative;
+	padding: 12px;
+	background: linear-gradient(45deg, #1a45a1, #14afb4, #11cc6f);
+	background-size: 500% 500%;
+	animation: change-gradient 10s ease-in-out infinite;
+}
+
+.footer-description{
+	color: #ffffff;
+	margin: 0;
+	font-size: 12px;
+}
+
+.contact-icon{
+	color: #ffffff;
+	padding: 7px;
+}
+
+.contact-icon:hover{
+	color: #8c8c8c;
+}

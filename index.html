@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Meditation App</title>
+  </head>
+  <body>
+    <div class="input">
+      <label>Select Breaths</label>
+      <select class="breath-input">
+        <option value="3">3 Breaths</option>
+        <option value="5">5 Breaths</option>
+        <option value="7">7 Breaths</option>
+      </select>
+    </div>
+    <div class="circle-wrap">
+      <div class="circle-outline"></div>
+      <div class="circle-progress"></div>
+    </div>
+    <p class="breaths">
+      Breaths remaining: <span class="breaths-text">3</span>
+    </p>
+    <p class="instructions">Are you ready to start breathing?</p>
+    <button class="start">Begin</button>
+    <br>
+    <div class="footer">
+      <div class="contact">
+        <a target="_blank" href="https://github.com/eejraka"
+          ><i class="fab fa-github fa-lg contact-icon"></i
+        ></a>
+        <a target="_blank" href="https://www.linkedin.com/in/aayushkarjee/"
+          ><i class="fab fa-linkedin fa-lg contact-icon"></i
+        ></a>
+      </div>
+      <p class="footer-description">Project by Aayush Karjee.</p>
+    </div>
+    <script src="/app.js"></script>
+  </body>
+</html>
